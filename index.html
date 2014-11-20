@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Fragmented Portraiture</title>
+  <style type="text/css">
+    body {
+      background: #000;
+      padding: 20px;
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: #AAA;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    canvas {
+      margin-right: 20px;
+      border: 1px solid #666;
+    }
+
+    #image-info {
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    #username {
+      padding-right: 5px;
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      color: #CCC;
+    }
+
+    p {
+
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fragmented Portraiture</h1>
+
+  <p>
+    A generative portraiture experiment by <a href='http://mikecreighton.com/' target='_blank'>Mike Creighton</a>, created at 11/08/2014's
+    <a href='http://www.meetup.com/PDX-Creative-Coders/' target='_blank'>PDX Creative Coders</a> hack day meetup using the <a href="http://www.uncontext.com" target='_blank'>uncontext</a> data feed and the <a href='https://www.flickr.com/services/api/' target='_blank'>Flickr API</a>. Check out the source code at <a href='https://github.com/mikecreighton/fragmented-portraiture' target="_blank">https://github.com/mikecreighton/fragmented-portraiture</a>.
+  </p>
+
+  <div id='image-info'>
+    <span id='username'></span><a href='' target='_blank' id='photourl'></a>
+  </div>
+
+  <canvas id='canvas' width='800' height='800'></canvas>
+  <canvas id='image-loader' width='800' height='800'></canvas>
+
+  <script src="js/vendor/jquery-2.1.0.min.js"></script>
+  <script src="js/vendor/jquery-jsonp.js"></script>
+  <script src="js/vendor/jquery-getimagedata.js"></script>
+  <script src="js/vendor/gsap/TweenLite.min.js"></script>
+  <script src="js/vendor/gsap/easing/EasePack.min.js"></script>
+  <script src="js/vendor/toxiclibs.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
